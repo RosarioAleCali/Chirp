@@ -21,3 +21,14 @@ The _$scope_ is shared between the controller and the view, and it is how data a
 Our _chirpApp.js_ also uses the _ngRoute_ module. This is a very important module used to handle the routes.<br/>
 Next, we need to create an _app.js_ file which NodeJS will point to as Chirp's default page.<br/>
 We need to do this in order to run our app on a HTTP Server and avoid any CORS errors when trying to load AngularJS.<br/>
+## Using NodeJS
+The first thing to do when using NodeJS is to create a new blank Express application and to define our routes.<br/>
+The most important step is to implement our _RESTful API_ which is responsable to handle our Users and Posts use cases.<br/>
+To implement authentication is Chirp the module _Passport_ is used.<br/>
+## Integrating MongoDB
+MongoDB is a Document Oriented Database where the data is enclosed within a single document.<br/>
+MongoDB is used here to store Users and Posts.<br/>
+Chirp uses _mongoose_ as its Object Data Mapper in order to specify and enforce a schema for our Post and User objects.<br/>
+Our Data will look like JSON objects and will be enclosed as one unit. The units are called documents and are stored in collections.<br/>
+## Demo
+[![DEMO](http://img.youtube.com/vi/wjrknx0pmfg/0.jpg)](http://www.youtube.com/watch?v=wjrknx0pmfg)<br/>
