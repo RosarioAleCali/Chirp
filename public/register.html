@@ -1,0 +1,18 @@
+<!--
+    Chirp!
+	
+	Author: Rosario Alessandro Cali
+	Date: November 1, 2017
+	Version: 1.0
+-->
+
+<!-- Partial view for the register form -->
+<form class="form-auth" ng-submit="register()">
+    <h2>Register</h2>
+    <p class="text-warning">{{error_message}}</p>
+    <input type="username" ng-model="user.username" placeholder="Username" class="form-control">
+    <br>
+    <input type="password" ng-model="user.password" placeholder="Password" class="form-control">
+    <br>
+    <input type="submit" value="Register" class="btn btn-primary" />
+</form>
